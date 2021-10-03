@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek>
+    <konyv id="1" >
+        <cim>GPU farm és eGPU építési kisokos</cim>
+        <kiallitaseve>2021</kiallitaseve> 
+        <kiado>Fehér Krisztián Dezső</kiado>
+        <szerzok>Fehér Krisztián</szerzok>
+    </konyv>
+    <konyv id="2" >
+        <cim>DarkNet - avagy az internet sötét oldala</cim>
+        <kiallitaseve>2021</kiallitaseve> 
+        <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
+        <szerzok>Nagy Róbert</szerzok>
+    </konyv>
+    <konyv id="3" >
+        <cim>Kiáltvány a bizalomról_ - Mit kell tennünk egy jobb internetért?</cim>
+        <kiallitaseve>2020</kiallitaseve> 
+        <kiado>Pallas Athéné Könyvkiadó Kft.</kiado>
+        <szerzok>Damian Bradfield</szerzok>
+    </konyv>
+</konyvek>
