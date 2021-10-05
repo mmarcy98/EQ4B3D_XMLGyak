@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding=UTF-8"?>
+
+<xs:element name= "books">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="book" maxOccurs="unbound">
+
+            <xs:element name = "books">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Title" maxOccurs="unbound">
+                        <xs:element name="published" maxOccurs="unbound">
+                        <xs:element name="publisher" maxOccurs="unbound">
+                        <xs:element name="author" maxOccurs="unbound">
+                        <xs:element name="abstract" maxOccurs="unbound">
+</xs:sequence>
+<xs:attribute name="id" type="xs:string" use="required">
+</xs:complexType>
+</xs:sequence>
+</xs:complexType>
