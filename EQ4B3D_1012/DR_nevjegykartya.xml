@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nevjegykartyak>
+    <nevjegykartya>
+        <nev>Dávid Rebeka</nev>
+        <ceg>
+            <nev>Partindex</nev>
+            <cim>
+                <iranyitoszam>8800</iranyitoszam>
+                <varos>Nagykanizsa</varos>
+                <utca>Rózsa utca</utca>
+                <hazszam>13</hazszam>
+            </cim>
+            <telefonszam>+36700000000</telefonszam>
+            <weblap>Fejlesztés alatt</weblap>
+            <beosztas>designer</beosztas>
+            <email>rebuus96@gmail.com</email>
+        </ceg>
+    </nevjegykartya>
+    <nevjegykartya>
+        <nev>Várhegyi Anett</nev>
+        <ceg>
+            <nev>Partindex</nev>
+            <cim>
+                <iranyitoszam>3534</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Könyves Kálmán utca</utca>
+                <hazszam>29</hazszam>
+            </cim>
+            <telefonszam>+36700000000</telefonszam>
+            <weblap>Fejlesztés alatt</weblap>
+            <beosztas>csapatvezető,designer</beosztas>
+            <email>varhegyianett29@gmail.com</email>
+        </ceg>
+    </nevjegykartya>
+</nevjegykartyak>
