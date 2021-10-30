@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ertodtd>
+    <A>
+        <Aa> id="01" </Aa>
+        <Ab>
+            <Abx> " " </Abx>
+            <Aby> " " </Aby>
+        </Ab>
+        <Ac>
+            <Abd> " " </Abd>
+            <Abe> " " </Abe>
+        </Ac>
+    </A>
+    <B>
+        <Ba>id="02" </Ba>
+        <Bb>
+            <Bbx> " " </Bbx>
+            <Bby> " " </Bby>
+        </Bb>
+    </B>
+    <C>
+        <Ca> id="03" </Ca>
+        <Cb> " " </Cb>
+        <A_B>
+            <A_Bc> " " </A_Bc>
+        </A_B>
+    </C>
+</ertodtd>

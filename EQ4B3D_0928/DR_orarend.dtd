@@ -1,0 +1,12 @@
+<!ELEMENT orarend (ora+)>
+<!ELEMENT ora (targy,idopont,helyszin,oktato,szak)>
+<!ATTLIST ora id NMTOKEN #REQUIRED>
+<!ATTLIST ora tipus (Elmelet|Gyakorlat) #REQUIRED>
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont EMPTY>
+<!ATTLIST idopont nap (Hetfo|Kedd|Szerda) #REQUIRED>
+<!ATTLIST idopont tol NMTOKEN #REQUIRED>
+<!ATTLIST idopont ig NMTOKEN #REQUIRED>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
