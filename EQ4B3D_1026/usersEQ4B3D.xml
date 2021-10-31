@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<users>
+    <user id="1">
+        <firstname>Rebeka</firstname>
+        <lastname>Dávid</lastname>
+        <profession>programozó</profession>
+    </user>
+    <user id="2">
+        <firstname>Icuka</firstname>
+        <lastname>Boltvezető</lastname>
+        <profession>programozó</profession>
+    </user>
+    <user id="3">
+        <firstname>Erzsi</firstname>
+        <lastname>Kasszás</lastname>
+        <profession>programozó</profession>
+    </user>
+</users>

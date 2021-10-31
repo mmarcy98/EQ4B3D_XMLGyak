@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="domeq4b3d">
+  <user id="1">
+    <firstname>David</firstname>
+    <lastname>Rebeka</lastname>
+    <profession>Developer</profession>
+  </user>
+  <user id="2">
+    <firstname>Varhegyi</firstname>
+    <lastname>Anett</lastname>
+    <profession>Developer</profession>
+  </user>
+  <user id="3">
+    <firstname>Gazdicsko</firstname>
+    <lastname>Marcell</lastname>
+    <profession>Developer</profession>
+  </user>
+</users>
