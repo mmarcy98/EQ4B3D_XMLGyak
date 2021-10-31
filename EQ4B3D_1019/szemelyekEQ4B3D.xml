@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<szemelyek>
+    <szemely id="1">
+        <nev>Dávid Rebeka</nev>
+        <kor>21</kor>
+        <varos>Nagykanizsa</varos>
+    </szemely>
+    <szemely id="2">
+        <nev>Csörgics Márk</nev>
+        <kor>23</kor>
+        <varos>Lenti</varos>
+    </szemely>
+    <szemely id="3">
+        <nev>Várhegyi Anett</nev>
+        <kor>23</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+</szemelyek>

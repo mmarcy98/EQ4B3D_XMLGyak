@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="szemelyek">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="szemely" type="szemely_tipus" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="szemely_tipus">
+        <xs:sequence>
+            <xs:element name="nev" type="nev_tipus" />
+            <xs:element name="kor" type="kor_tipus" />
+            <xs:element name="varos" type="varos_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="id" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="nev_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kor_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="varos_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
