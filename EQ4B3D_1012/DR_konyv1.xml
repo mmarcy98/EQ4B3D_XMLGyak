@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konyvek>
+    <konyv isbn="0">
+        <cim>13 okom volt</cim>
+        <szerzo>Jay Asher</szerzo>
+        <szereplo1>
+            <nev>Clay Jensen</nev>
+            <baratja>Hannah Baker</baratja>
+            <szuletett>1996. December 29.</szuletett>
+            <jellemzes>kivancsi, szomoru, megtort</jellemzes>
+        </szereplo1>
+        <szereplo2>
+            <nev>Hannah Baker</nev>
+            <szuletett>1990. Augusztus 28.</szuletett>
+            <jellemzes>maganyos, ketsegbeesett</jellemzes>
+        </szereplo2>
+    </konyv>
+</konyvek>
