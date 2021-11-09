@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="users">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="user" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="firstname" type="xs:string" />
-                            <xs:element name="lastname" type="xs:string" />
-                            <xs:element name="profession" type="xs:string" />
-                        </xs:sequence>
-                        <xs:attribute name="id" type="xs:integer" use="required" />
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="user" type="user_tipus" maxOccurs="unbounded" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:complexType name="user_tipus">
+        <xs:sequence>
+            <xs:element name="firstname" type="firstname_tipus" />
+            <xs:element name="lastname" type="lastname_tipus" />
+            <xs:element name="profession" type="profession_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="id" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="firstname_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="lastname_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="profession_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
 </xs:schema>
