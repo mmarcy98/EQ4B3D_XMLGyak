@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="class">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="student_tipus" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="student_tipus">
+        <xs:sequence>
+            <xs:element name="keresztnev" type="keresztnev_tipus" />
+            <xs:element name="vezeteknev" type="vezeteknev_tipus" />
+            <xs:element name="becenev" type="becenev_tipus" />
+            <xs:element name="kor" type="kor_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="id" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="keresztnev_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="vezeteknev_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="becenev_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kor_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
