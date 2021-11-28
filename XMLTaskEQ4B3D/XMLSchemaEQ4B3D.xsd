@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="etteremterv">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="etterem" type="etterem_tipus" />
+                    <xs:element name="beszallito" type="beszallito_tipus" />
+                    <xs:element name="termelo" type="termelo_tipus" />
+                    <xs:element name="szemelyzet" type="szemelyzet_tipus" />
+                    <xs:element name="foglalas" type="foglalas_tipus" />
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="eid">
+            <xs:selector xpath="etterem" />
+            <xs:field xpath="@eid" />
+        </xs:key>
+        <xs:key name="bid">
+            <xs:selector xpath="beszallito" />
+            <xs:field xpath="@bid" />
+        </xs:key>
+        <xs:key name="tid_pk">
+            <xs:selector xpath="termelo" />
+            <xs:field xpath="@tid" />
+        </xs:key>
+        <xs:key name="szid">
+            <xs:selector xpath="szemelyzet" />
+            <xs:field xpath="@szid" />
+        </xs:key>
+        <xs:key name="fid_pk">
+            <xs:selector xpath="foglalas" />
+            <xs:field xpath="@fid" />
+        </xs:key>
+        <xs:keyref name="tid_fk" refer="tid_pk">
+            <xs:selector xpath="beszallito" />
+            <xs:field xpath="@tid" />
+        </xs:keyref>
+        <xs:keyref name="fid_fk" refer="fid_pk">
+            <xs:selector xpath="szemelyzet" />
+            <xs:field xpath="@fid" />
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="etterem_tipus">
+        <xs:sequence>
+            <xs:element name="elerhetoseg" type="elerhetoseg_tipus" />
+            <xs:element name="menu" type="menu_tipus" />
+            <xs:element name="tulajdonos" type="tulajdonos_tipus" />
+            <xs:element name="nev" type="nev_tipus" />
+            <xs:element name="cim" type="cim_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="eid" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="beszallito_tipus">
+        <xs:sequence>
+            <xs:element name="elerhetoseg" type="elerhetoseg_tipus" />
+            <xs:element name="nev" type="nev_tipus" />
+            <xs:element name="cim" type="cim_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="bid" use="required" />
+        <xs:attribute type="xs:string" name="tid" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="termelo_tipus">
+        <xs:sequence>
+            <xs:element name="elerhetoseg" type="elerhetoseg_tipus" />
+            <xs:element name="nev" type="nev_tipus" />
+            <xs:element name="cim" type="cim_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="tid" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="szemelyzet_tipus">
+        <xs:sequence>
+            <xs:element name="munkakor" type="munkakor_tipus" />
+            <xs:element name="elerhetoseg" type="elerhetoseg_tipus" />
+            <xs:element name="szig" type="szig_tipus" />
+            <xs:element name="szul_datum" type="szul_datum_tipus" />
+            <xs:element name="nev" type="nev_tipus" />
+            <xs:element name="cim" type="cim_tipus" />
+            <xs:element name="vendeg" type="vendeg_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="szid" use="required" />
+        <xs:attribute type="xs:string" name="fid" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="foglalas_tipus">
+        <xs:sequence>
+            <xs:element name="hany_fo" type="hanyfo_tipus" />
+            <xs:element name="datum" type="datum_tipus" />
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="fid" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="menu_tipus">
+        <xs:sequence>
+            <xs:element name="etel" type="etel_tipus" />
+            <xs:element name="ital" type="ital_tipus" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vendeg_tipus">
+        <xs:sequence>
+            <xs:element name="vendeg_szam" type="vendeg_szam_tipus" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="cim_tipus">
+        <xs:sequence>
+            <xs:element name="ir_szam" type="ir_szam_tipus" />
+            <xs:element name="utca" type="utca_tipus" />
+            <xs:element name="hazszam" type="hazszam_tipus" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="nev_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tulajdonos_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="etel_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ital_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="elerhetoseg_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="munkakor_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="szig_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="utca_tipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="szul_datum_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="hazszam_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ir_szam_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="hanyfo_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="vendeg_szam_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="datum_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

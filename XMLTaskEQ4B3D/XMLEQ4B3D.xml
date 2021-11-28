@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<etteremterv>
+    <etterem eid="1">
+        <elerhetoseg>06301593682</elerhetoseg>
+        <menu>
+            <etel>Húsleves, Spagetti, Túrógombóc, Rántott hús</etel>
+            <ital>Cola, Víz, Sör</ital>
+        </menu>
+        <tulajdonos>Kovács Ákos</tulajdonos>
+        <nev>Szőlőskert Étterem</nev>
+        <cim>
+            <ir_szam>8800</ir_szam>
+            <utca>Szőlősgazda út</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </etterem>
+    <beszallito bid="1" tid="1">
+        <nev>nagypista</nev>
+        <elerhetoseg>06352569852</elerhetoseg>
+        <cim>
+            <ir_szam>8778</ir_szam>
+            <utca>Kossuth Lajos utca</utca>
+            <hazszam>47</hazszam>
+        </cim>
+    </beszallito>
+    <beszallito bid="2" tid="2">
+        <nev>kispista</nev>
+        <elerhetoseg>06301475658</elerhetoseg>
+        <cim>
+            <ir_szam>8400</ir_szam>
+            <utca>Ipari park</utca>
+            <hazszam>15</hazszam>
+        </cim>
+    </beszallito>
+    <beszallito bid="3" tid="3">
+        <nev>Lencse Trans Kft</nev>
+        <elerhetoseg>06703692584</elerhetoseg>
+        <cim>
+            <ir_szam>2900</ir_szam>
+            <utca>Török Ignác utca</utca>
+            <hazszam>87</hazszam>
+        </cim>
+    </beszallito>
+    <termelo tid="1">
+        <nev>Újudvar termelői Piac</nev>
+        <elerhetoseg>06706583654</elerhetoseg>
+        <cim>
+            <ir_szam>8778</ir_szam>
+            <utca>Fő út</utca>
+            <hazszam>73</hazszam>
+        </cim>
+    </termelo>
+    <termelo tid="2">
+        <nev>Hévízi termelői Piac</nev>
+        <elerhetoseg>06304862596</elerhetoseg>
+        <cim>
+            <ir_szam>8380</ir_szam>
+            <utca>Király út</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </termelo>
+    <termelo tid="3">
+        <nev>Őriszentpéter Helyi termelői Piac</nev>
+        <elerhetoseg>06203488785</elerhetoseg>
+        <cim>
+            <ir_szam>9941</ir_szam>
+            <utca>Városszer</utca>
+            <hazszam>94</hazszam>
+        </cim>
+    </termelo>
+    <szemelyzet fid="1" szid="1">
+        <munkakor>szakács</munkakor>
+        <elerhetoseg>0641526378</elerhetoseg>
+        <SZIG>156934AS</SZIG>
+        <szul_datum>1979.10.25.</szul_datum>
+        <nev>Kiss Péter</nev>
+        <cim>
+            <ir_szam>8800</ir_szam>
+            <utca>Rózsa utca</utca>
+            <hazszam>25</hazszam>
+        </cim>
+        <vendeg>
+            <vendeg_szam>2000</vendeg_szam>
+        </vendeg>
+    </szemelyzet>
+    <szemelyzet fid="2" szid="2">
+        <munkakor>takarító</munkakor>
+        <elerhetoseg>0674515621</elerhetoseg>
+        <SZIG>364825SA</SZIG>
+        <szul_datum>1998.05.13.</szul_datum>
+        <nev>Példa Péter</nev>
+        <cim>
+            <ir_szam>1534</ir_szam>
+            <utca>Fő út</utca>
+            <hazszam>15</hazszam>
+        </cim>
+        <vendeg>
+            <vendeg_szam>152</vendeg_szam>
+        </vendeg>
+    </szemelyzet>
+    <szemelyzet fid="3" szid="3">
+        <munkakor>pincér</munkakor>
+        <elerhetoseg>0674185296</elerhetoseg>
+        <SZIG>187263LK</SZIG>
+        <szul_datum>1994.06.01.</szul_datum>
+        <nev>Mihály Krisztina</nev>
+        <cim>
+            <ir_szam>8496</ir_szam>
+            <utca>Táncsics utca</utca>
+            <hazszam>82</hazszam>
+        </cim>
+        <vendeg>
+            <vendeg_szam>1896</vendeg_szam>
+        </vendeg>
+    </szemelyzet>
+    <foglalas fid="1">
+        <hany_fo>10</hany_fo>
+        <datum>2021.12.12.</datum>
+    </foglalas>
+    <foglalas fid="2">
+        <hany_fo>20</hany_fo>
+        <datum>2031.9.20.</datum>
+    </foglalas>
+    <foglalas fid="3">
+        <hany_fo>10</hany_fo>
+        <datum>2020.01.01.</datum>
+    </foglalas>
+</etteremterv>

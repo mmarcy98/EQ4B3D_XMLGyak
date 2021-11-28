@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibakezelés xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="http://www.example.com/XMLSchemaHC1Y8Y.xsd">
+	<hiba hid="01">
+		<hibaüzenet>TV hibaüzenet</hibaüzenet>
+		<időtartam>
+			<mióta>10:00</mióta>
+			<hányszor>3</hányszor>
+		</időtartam>
+	
+	
+		<ügyfél üid="01">
+			<szül_idő>1999.09.03</szül_idő>
+			<szül_hely>Miskolc</szül_hely>
+			<kód>14213456</kód>
+			<név>XYZ</név>
+		</ügyfél>
+	
+		<ügyintéző ügyid="01">
+			<szint>3</szint>
+			<név>LKP</név>
+			<beosztás>operátor</beosztás>
+		</ügyintéző>
+
+		<vezető vid="01">
+			<név>MKP</név>
+			<beosztás>vezető operátor</beosztás>
+			<szint>1</szint>
+		</vezető>
+	</hiba>
+	
+		<hiba hid="02">
+		<hibaüzenet>Telefon hibaüzenet</hibaüzenet>
+		<időtartam>
+			<mióta>07:00</mióta>
+			<hányszor>8</hányszor>
+		</időtartam>
+	
+	
+		<ügyfél üid="02">
+			<szül_idő>2000.11.08</szül_idő>
+			<szül_hely>Miskolc</szül_hely>
+			<kód>76576523</kód>
+			<név>PKZ</név>
+		</ügyfél>
+	
+		<ügyintéző ügyid="02">
+			<szint>2</szint>
+			<név>WDT</név>
+			<beosztás>operátor</beosztás>
+		</ügyintéző>
+
+		<vezető vid="02">
+			<név>MIP</név>
+			<beosztás>vezető helyettes operátor</beosztás>
+			<szint>1</szint>
+		</vezető>
+	</hiba>
+	
+		<hiba hid="03">
+		<hibaüzenet>Internet hibaüzenet</hibaüzenet>
+		<időtartam>
+			<mióta>13:00</mióta>
+			<hányszor>5</hányszor>
+		</időtartam>
+	
+	
+		<ügyfél üid="03">
+			<szül_idő>1999.03.21</szül_idő>
+			<szül_hely>Miskolc</szül_hely>
+			<kód>00243511</kód>
+			<név>MNB</név>
+		</ügyfél>
+	
+		<ügyintéző ügyid="03">
+			<szint>3</szint>
+			<név>MIN</név>
+			<beosztás>operátor</beosztás>
+		</ügyintéző>
+
+		<vezető vid="03">
+			<név>DOP</név>
+			<beosztás>vezető operátor</beosztás>
+			<szint>1</szint>
+		</vezető>
+	</hiba>
+</hibakezelés>

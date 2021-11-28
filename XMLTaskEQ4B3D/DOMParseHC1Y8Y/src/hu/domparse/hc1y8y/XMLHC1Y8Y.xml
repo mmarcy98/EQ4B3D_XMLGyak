@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibakezelés>
+	<hiba id="1">
+		<hibaüzenet>Hibaüz</hibaüzenet>
+		<időtartam>
+			<mióta>10:00</mióta>
+			<hányszor>3</hányszor>
+		</időtartam>
+	</hiba>
+	
+	<ügyfél id="2">
+		<szül_idő>1999.09.03</szül_idő>
+		<szül_hely>Miskolc</szül_hely>
+		<kód>007</kód>
+		<név>XYZ</név>
+	</ügyfél>
+	
+	<ügyintéző id="2">
+		<szint>3</szint>
+		<név>LKP</név>
+		<beosztás>operátor</beosztás>
+	</ügyintéző>
+
+	<vezető id="3">
+		<név>MKP</név>
+		<beosztás>vezető operátor</beosztás>
+		<szint>1</szint>
+	</vezető>
+</hibakezelés>
